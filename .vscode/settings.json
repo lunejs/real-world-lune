@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["lunejs"]
+  "cSpell.words": ["lunejs"],
+  "editor.formatOnSave": false
 }
