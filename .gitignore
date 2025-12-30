@@ -6,6 +6,7 @@ node_modules
 .pnp.js
 
 # Local env files
+.env
 .env.*
 
 # Testing
@@ -33,4 +34,4 @@ yarn-error.log*
 # lune
 uploads
 tmp
-
+*.sql
