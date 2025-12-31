@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@lunejs/admin-ui": "0.1.3",
-    "@lunejs/core": "0.1.4",
+    "@lunejs/core": "0.1.5",
     "@lunejs/email-plugin": "^0.1.0",
+    "@lunejs/paypal-plugin": "^0.1.0",
+    "@lunejs/s3": "0.1.1",
     "dotenv": "^17.2.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"

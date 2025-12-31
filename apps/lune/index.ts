@@ -2,7 +2,6 @@ import {
   AdminUiServerPlugin,
   AssetServerPlugin,
   DefaultImageProcessor,
-  LocalStorageProvider,
   LuneServer,
   DefaultOrderCodeStrategy,
   OrderPriceDiscountHandler,
@@ -14,6 +13,8 @@ import {
 } from '@lunejs/core';
 import { config } from 'dotenv';
 import { EmailPlugin } from '@lunejs/email-plugin';
+import { PaypalPlugin } from '@lunejs/paypal-plugin';
+import { S3StorageProvider } from '@lunejs/s3';
 
 config();
 
@@ -28,7 +29,14 @@ const luneServer = new LuneServer({
   },
   assets: {
     imageProcessor: new DefaultImageProcessor(),
-    storageProvider: new LocalStorageProvider(process.env.LUNE_DOMAIN as string),
+    storageProvider: new S3StorageProvider({
+      bucketName: process.env.AWS_BUCKET_NAME as string,
+      region: process.env.AWS_REGION as string,
+      credentials: {
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID as string,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY as string
+      }
+    }),
   },
   discounts: {
     handlers: [
@@ -54,6 +62,11 @@ const luneServer = new LuneServer({
     new AssetServerPlugin(),
     new AdminUiServerPlugin(),
     new EmailPlugin({ devMode: true }),
+    new PaypalPlugin({
+      devMode: true,
+      clientId: process.env.PAYPAL_CLIENT_ID as string,
+      secret: process.env.PAYPAL_SECRET as string,
+    })
   ],
 });
 
