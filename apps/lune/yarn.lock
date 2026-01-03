@@ -1161,10 +1161,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lunejs/admin-ui@0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@lunejs/admin-ui/-/admin-ui-0.1.4.tgz#f781b45466786fd8aa75e874bd366f3a8212513a"
-  integrity sha512-YaW8nqpBVV12kF2zzn3edzZyU53CK0wccBMFv09Im/iqAuh1YJnRcko6bKSzBgpObQveBdZqU6STua9Ucr68gw==
+"@lunejs/admin-ui@0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@lunejs/admin-ui/-/admin-ui-0.1.5.tgz#5a1d51d48644a78807594828fe7080c1771e8283"
+  integrity sha512-ZJnM7qbUoBb6F5Eg8JHoGynPN79VJxyBG21LdZHVCXxV7lDdOZmRqY9YRvpuhUM3sS4NW2X8Sz0cFOx9UfX6Ow==
   dependencies:
     "@date-fns/utc" "^2.1.1"
     "@dnd-kit/core" "^6.3.1"
@@ -1203,10 +1203,10 @@
     kleur "^4.1.5"
     slugify "^1.6.6"
 
-"@lunejs/core@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@lunejs/core/-/core-0.1.7.tgz#6543917b63b71af494cdabe4f5699bb8c541e069"
-  integrity sha512-qPBo9rTSITmNNA0QNr1cdBhQDz/NquyisUlz3rHKGIaymXlprNdyDlaO2ipTgWpRP+y2KZDoQLuX7al+sLsjrQ==
+"@lunejs/core@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@lunejs/core/-/core-0.1.8.tgz#c76e44f33caf9858cde054597ea9f94ab130dd54"
+  integrity sha512-GrnxnyPmLT01+R7liDLHr12ICdUiXWuUDU73mOS3ZE5UmfVakKOUOFAXqvLbFzyFr43qTlwsRzCIY2yLLAXluw==
   dependencies:
     "@graphql-tools/load-files" "^7.0.1"
     "@lunejs/common" "*"
